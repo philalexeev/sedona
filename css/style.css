@@ -483,6 +483,11 @@ a {
 	margin: 0 auto;
 }
 
+.page-header__banner-wrapper {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+	clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+}
+
 .main-nav {
 	position: relative;
 }
@@ -617,32 +622,25 @@ a {
 	z-index: 1;
 }
 
-.page-header__border-wrapper {
-	position: absolute;
-	bottom: 0;
-	height: 59px;
-	width: 100%;
-	overflow: hidden;
-	background-image: url(../img/bg-intro-triangle-desktop.svg);
-	background-position: center;
-	background-size: auto 59px;
-	background-repeat: no-repeat;
-}
-
 .page-header__banner {
 	width: 282px;
 	margin: 0 auto;
 }
 
 .about {
+	position: relative;
 	width: 320px;
 	margin: 0 auto;
+	z-index: 2;
 }
 
 .about__wrapper {
 	position: relative;
 	padding: 40px 30px 45px;
 	text-align: center;
+	background-color: #fff;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%);
+	clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 0 94%);
 }
 
 .about__wrapper-low-padding {
@@ -672,6 +670,8 @@ a {
 	position: relative;
 	width: 320px;
 	margin: 0 auto;
+	margin-top: -16px;
+	z-index: 1;
 }
 
 .features__border-wrapper {
@@ -692,9 +692,11 @@ a {
 }
 
 .features__title-wrapper {
-	padding: 40px 30px 40px;
+	position: relative;
+	padding: 56px 30px 40px;
 	background-color: #82b4d2;
 	text-align: center;
+	z-index: 1;
 }
 
 .features__title {
@@ -1572,6 +1574,11 @@ a {
 	width: 768px;
 }
 
+.page-header__banner-wrapper {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 93%, 95% 94%, 95% 89%, 50% 100%, 5% 89%, 5% 94%, 0% 93%);
+	clip-path: polygon(0 0, 100% 0, 100% 93%, 95% 94%, 95% 89%, 50% 100%, 5% 89%, 5% 94%, 0% 93%);
+}
+
 .main-nav__items {
 	-ms-flex-direction: row;
 	flex-direction: row;
@@ -1659,8 +1666,14 @@ a {
 	width: 768px;
 }
 
+.about {
+	z-index: 0;
+}
+
 .about__wrapper {
 	padding: 50px 140px 50px;
+	-webkit-clip-path: none;
+	clip-path: none;
 }
 
 .about__top-text {
@@ -1673,6 +1686,11 @@ a {
 
 .features {
 	width: 768px;
+}
+
+.features {
+	margin-top: 0;
+	z-index: 0;
 }
 
 .features__border-wrapper {
@@ -1688,7 +1706,7 @@ a {
 
 .features__title-wrapper {
 	width: 156px;
-	padding: 35px 50px;
+	padding: 46px 50px;
 }
 
 .features__title {
@@ -2110,6 +2128,8 @@ a {
 	padding-bottom: 85px;
 	background-image: url('../img/bg-back-desktop.jpg');
 	background-size: 1200px auto;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 79% 94%, 79% 90%, 50% 100%, 21% 90%, 21% 94%, 0% 90%);
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 79% 94%, 79% 90%, 50% 100%, 21% 90%, 21% 94%, 0% 90%);
 }
 
 .main-nav__item:last-child {
