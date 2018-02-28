@@ -4,10 +4,12 @@
 		<meta charset="utf-8">
 		<title>Sedona</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="description" content="Тестовый сайт для портфолио">
 		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js'></script>
 	</head>
 
 	<body>
@@ -54,37 +56,41 @@
 					<p class="features__title-number">№1</p>
 					<p class="features__title-description">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
 				</div>
-				<picture class="features__1-image">
-					<source media="(min-width: 1200px)" srcset="img/photo-city.jpg 1x, img/photo-city@2x.jpg 2x">
-					<source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-					<img src="img/photo-city@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="City">
-				</picture>
-				<ul class="features__1-options">
-					<li class="features__1-options-item">
-						<img class="features__1-options-logo" src="img/icon-house.svg">
-						<p class="features__1-options-title">Жильё</p>
-						<p class="features__1-options-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				<div class="features__1-image">
+					<picture>
+						<source media="(min-width: 1200px)" srcset="img/photo-city.jpg 1x, img/photo-city@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+						<img src="img/photo-city@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="City">
+					</picture>
+				</div>
+			</div>
+			<div class="features__2">
+				<ul class="features__2-wrapper">
+					<li class="features__2-item">
+						<img class="features__2-logo" src="img/icon-house.svg">
+						<p class="features__2-title">Жильё</p>
+						<p class="features__2-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</li>
-					<li class="features__1-options-item">
-						<img class="features__1-options-logo" src="img/icon-gift.svg">
-						<p class="features__1-options-title">Сувениры</p>
-						<p class="features__1-options-description">Не только китайского, но и местного производства!</p>
+					<li class="features__2-item">
+						<img class="features__2-logo" src="img/icon-gift.svg">
+						<p class="features__2-title">Сувениры</p>
+						<p class="features__2-description">Не только китайского, но и местного производства!</p>
 					</li>
-					<li class="features__1-options-item">
-						<img class="features__1-options-logo" src="img/icon-burger.svg">
-						<p class="features__1-options-title">Еда</p>
-						<p class="features__1-options-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+					<li class="features__2-item">
+						<img class="features__2-logo" src="img/icon-burger.svg">
+						<p class="features__2-title">Еда</p>
+						<p class="features__2-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
 					</li>
 				</ul>
 			</div>
 
-			<div class="features__2">
+			<div class="features__3">
 				<div class="features__title-wrapper">
 					<p class="features__title">ТАМ ЕСТЬ Мост дьявола</p>
 					<p class="features__title-number">№2</p>
 					<p class="features__title-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
-				<picture class="features__2-image">
+				<picture class="features__3-image">
 					<source media="(min-width: 1200px)" srcset="img/photo-bridge.jpg 1x, img/photo-bridge@2x.jpg 2x">
 					<source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
 					<img src="img/photo-4-tablet.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="City">
@@ -127,15 +133,8 @@
 		</div>
 
 		<div class="map">
-			<a href="https://www.google.ru/maps/place/%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0,+%D0%90%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D0%B0+86336,+%D0%A1%D0%A8%D0%90/@34.8269157,-113.1602434,8.25z/data=!4m5!3m4!1s0x872da132f942b00d:0x5548c523fa6c8efd!8m2!3d34.8697359!4d-111.7609978?hl=ru" title="Sedona">
-				<div class="map__image-wrapper">
-					<picture class="map__image">
-						<source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-						<source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-						<img src="img/bg-map-mobile.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Map">
-					</picture>
-				</div>
-			</a>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592742.3413684535!2d-112.0567743521813!3d34.84442201228305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1519748863454" width="100%" height='350' frameborder="0" style="border:0" allowfullscreen>
+			</iframe>
 		</div>
 
 		<footer class="main-footer">
