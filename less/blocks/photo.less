@@ -1,0 +1,138 @@
+.photos {
+	.container();
+}
+
+.photos__items {
+	padding: 20px;
+	border-top: 1px solid #e5e5e5;
+
+	&:last-child {
+		border-bottom: 1px solid #e5e5e5;
+		margin-bottom: 35px;		
+	}
+}
+
+.photos__item-wrapper {
+	margin-bottom: 15px;
+}
+
+.photos__name {
+	font-family: @font-family;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.photos__author {
+	margin-bottom: 5px;
+	font-family: @font-family;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #333;
+}
+
+.photos__likes {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.photos__like-icon {
+	fill: #b2b2b2;
+	margin-right: 10px;
+	cursor: pointer;
+
+	&:hover {
+		fill: #82b4d2;
+	}
+
+	&:active {
+		fill: #b2b2b2;
+	}
+}
+
+.photos__likes-numbers {
+	font-family: @font-family;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000;	
+}
+
+@media @tablet-width {
+	.photos__wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 60px;
+		padding-top: 25px;
+	}
+
+	.photos__items {
+		padding: 0;
+		border-top: none;
+
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;		
+		}
+	}
+
+	.photos__item-wrapper {
+		margin-bottom: 0;
+	}
+
+	.photos__items:nth-child(n+3):nth-child(odd) .photos__item-description {
+		background-color: #eaeaea;
+	}
+
+	.photos__item-description {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 20px;
+		padding-top: 15px;
+		background-color: #f2f2f2;
+	}
+
+	.photos__author {
+		margin-bottom: 0;
+	}
+}
+
+@media @desktop-width {
+	.photos__wrapper {
+		padding: 0;
+		padding-top: 25px;
+		margin-bottom: 60px;
+	}
+
+	.photos__items {
+		position: relative;
+	}
+
+	.photos__item-description {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.photos__items:nth-child(n+3):nth-child(odd) .photos__item-description {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.photos__name, 
+	.photos__author,
+	.photos__likes-numbers {
+		color: #fff;
+	}
+
+	.photos__like-icon {
+		fill: #fff;
+	}
+}
